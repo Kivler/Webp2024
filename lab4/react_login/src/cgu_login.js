@@ -12,7 +12,6 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import images from './images.jpg';
 
 function Copyright(props) {
   return (
@@ -31,7 +30,7 @@ function Copyright(props) {
 
 const defaultTheme = createTheme();
 
-export default function CGU_Login() {
+export default function cgu_login() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -51,8 +50,7 @@ export default function CGU_Login() {
           sm={4}
           md={7}
           sx={{
-            // backgroundImage: 'url(https://th.bing.com/th/id/OIP.MWuJIYHNO6MTAL3axWiRHgHaLE?rs=1&pid=ImgDetMain)',
-            backgroundImage: `url(${images})`,
+            backgroundImage: 'url(https://obs.line-scdn.net/0haTI-X-8JPnt0VCutK6JBLEwCMgpHMiRyVmUjGgFTYBhZeHEsHGdtGAYBN1cKZnwqVDsjGwRXN0xYMX8vSA/w644)',
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
@@ -74,7 +72,7 @@ export default function CGU_Login() {
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              登入
+              Sign in
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
@@ -82,7 +80,7 @@ export default function CGU_Login() {
                 required
                 fullWidth
                 id="email"
-                label="電子信箱地址"
+                label="Email Address"
                 name="email"
                 autoComplete="email"
                 autoFocus
@@ -92,14 +90,14 @@ export default function CGU_Login() {
                 required
                 fullWidth
                 name="password"
-                label="密碼"
+                label="Password"
                 type="password"
                 id="password"
                 autoComplete="current-password"
               />
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
-                label="記住我"
+                label="Remember me"
               />
               <Button
                 type="submit"
@@ -107,7 +105,7 @@ export default function CGU_Login() {
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >
-                登入
+                Sign In
               </Button>
               <Grid container>
                 <Grid item xs>
