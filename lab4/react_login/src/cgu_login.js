@@ -52,7 +52,7 @@ export default function CGU_Login() {
           md={7}
           sx={{
             // backgroundImage: 'url(https://th.bing.com/th/id/OIP.MWuJIYHNO6MTAL3axWiRHgHaLE?rs=1&pid=ImgDetMain)',
-            backgroundImage: `url(${Lighthouse})`,
+            backgroundImage: `url(${images})`,
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
